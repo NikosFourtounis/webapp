@@ -50,7 +50,8 @@
 		}
 	  },
 	  "invoice": {
-		"dataSource": "invoiceRemote"
+		"type": "sap.ui.model.json.JSONModel",
+		"uri": "Invoices.json"
 	  }
 	},
 	"resources": {

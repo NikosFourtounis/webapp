@@ -7,6 +7,7 @@
 		class="sapUiResponsiveMargin"
 		width="auto" >
 		<content>
+
 			<Button
 				icon="sap-icon://world"
 				text="{i18n>openDialogButtonText}"
@@ -16,13 +17,27 @@
 				text="{i18n>showHelloButtonText}"
 				press="onShowHello"
 				class="myCustomButton"/>
+			
 			<Input
 				value="{/recipient/name}"
 				valueLiveUpdate="true"
-				width="60%" />
+				width="50%" />
+			<Button
+				text="{i18n>showByeButtonText}"
+				press="onShowBye"
+				class="myCustomButton"/>	
+			
 			<FormattedText
 				htmlText="Hello {/recipient/name}"
 				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+			<FormattedText
+				htmlText="Show prices"
+				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+			<Switch state="true" customTextOn="Yes" customTextOff="No">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch>
 		</content>
 	</Panel>
 </mvc:View>

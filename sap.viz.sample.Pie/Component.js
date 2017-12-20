@@ -1,16 +1,11 @@
-sap.ui.define([
-	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel",
-	"sap/ui/demo/wt/controller/HelloDialog",
-	"sap/ui/core/UIComponent"]
-], function (UIComponent, JSONModel, HelloDialog,UIComponent) {
-	"use strict";
+sap.ui.define(['sap/ui/core/UIComponent'],
+    function(UIComponent) {
+    "use strict";
 
-	return UIComponent.extend("sap.ui.demo.wt.Component", {
+    var Component = UIComponent.extend("sap.viz.sample.Pie.Component", {
 
-		metadata : {
-			manifest: "json",
-			rootView : "sap.viz.sample.Pie.Pie",
+        metadata : {
+            rootView : "sap.viz.sample.Pie.Pie",
             includes : ["../../css/exploredStyle.css"],
             dependencies : {
                 libs : [
@@ -28,4 +23,9 @@ sap.ui.define([
                     ]
                 }
             }
+        }
+    });
 
+    return Component;
+
+});

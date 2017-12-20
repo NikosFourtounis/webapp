@@ -39,6 +39,22 @@
 	  "ShipperName": "Fun Inc.",
 	  "ShippedDate": "2015-01-27T00:00:00",
 	  "Status": "A"
+	},
+	{
+	  "ProductName": "Beer",
+	  "Quantity": 2,
+	  "ExtendedPrice": 4.99999,
+	  "ShipperName": "MD",
+	  "ShippedDate": "2015-02-18T00:00:00",
+	  "Status": "B"
+	},
+	{
+	  "ProductName": "Cookie",
+	  "Quantity": 9,
+	  "ExtendedPrice": 1.99999,
+	  "ShipperName": "MD",
+	  "ShippedDate": "2015-02-18T00:00:00",
+	  "Status": "B"
 	}
   ]
 }
